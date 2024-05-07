@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style-form.css">
+	<title>Membuat Desain Form Pendaftaran Responsive HTML dan CSS</title>
+</head>
+<body>
+	<div class="container">
+
+	<div id="header">
+		<h1>Form Pendaftaran</h1>
+		<p>Silahkan Isi Form Secara Lengkap</p>
+	</div>
+	<div class="form-container">
+	<form action="action.php" method="post" autocomplete="on" id="form1">
+		<fieldset>
+			<legend>Informasi Primer</legend>
+			<div class="form-grup">
+				<div class="label">
+					<label>Nama Lengkap</label>
+                </div>
+	            <div class="input">
+	            	<input type="text" name="nama" placeholder="Isikan nama lengkap Anda" maxlength="30" autofocus>
+				</div>
+			</div>
+			<div class="form-grup">
+				<div class="label">
+					<label>Email</label>
+				</div>
+				<div class="input">
+					<input type="email" name="email" placeholder="mis. email@gmail.com" autocomplete="off">
+				</div>
+			</div>
+			<div class="form-grup">
+				<div class="label">
+					<label>Password</label>
+				</div>
+				<div class="input">
+					<input type="password" name="password" placeholder="Password dengan huruf, angka dan symbol">
+				</div>
+			</div>
+			<div class="form-grup">
+				<div class="label">
+					<label>Asal Kota</label>
+				</div>
+				<div class="input">
+					<select name="kota">
+						<option value="Kotabumi">Kotabumi</option>
+						<option value="Pesawaran">Pesawaran</option>
+						<option value="Bandar Lampung">Bandar Lampung</option>	
+					</select>
+				</div>
+			</div>
+            <div class="form-grup">
+				<div class="label">
+					<label>Gender</label>
+				</div>
+				<div class="input">
+					<input type="radio" name="gender" value="1"> Laki-laki <br>
+                    <input type="radio" name="gender" value="2"> Perempuan					
+				</div>
+			</div>
+		</fieldset>
+
+        <fieldset>
+			<legend>Informasi Sekunder</legend>
+			<div class="form-grup">
+				<div class="label">
+					<label>Alamat</label>
+				</div>
+	            <div class="input">
+	            	<textarea name="alamat" placeholder="Isi alamat lengkap Anda"></textarea>
+				</div>
+			</div>
+			<div class="form-grup">
+				<div class="label">
+					<label>Email</label>
+				</div>
+				<div class="input">
+					<input type="email" name="email" placeholder="mis. email@gmail.com" autocomplete="off">
+				</div>
+			</div>
+			<div class="form-grup">
+				<div class="label">
+					<label>Kendaraan</label>
+				</div>
+				<div class="input">
+					<input type="checkbox" name="kendaraan" value="mobil"> Mobil <br>
+                    <input type="checkbox" name="kendaraan" value="motor"> Motor <br>
+                    <input type="checkbox" name="kendaraan" value="sepeda"> Sepeda <br>
+                </div>
+			</div>
+			
+            <div class="form-grup">
+				<div class="label">
+					<label>Alamat Website</label>
+				</div>
+				<div class="input">
+					<input type="url" name="website" placeholder="mis. http://websitesaya.com">		
+				</div>
+			</div>
+            <div class="form-grup">
+				<div class="label">
+					<label>Tanggal</label>
+				</div>
+				<div class="input">
+					<input type="date" name="tgl_lahir">	
+				</div>
+			</div>
+            <div class="form-grup">
+				<div class="label">
+					<label>Jumlah Anak</label>
+				</div>
+				<div class="input">
+					<input type="number" name="anak" value="0" min="0" max="10">	
+				</div>
+			</div>
+            <div class="form-grup">
+				<div class="label">
+					<label>Foto Anda</label>
+				</div>
+				<div class="input">
+                    <label for="file-upload" class="upload-foto">Upload Foto</label>
+					<input type="file" name="foto">	
+				</div>
+			</div>
+		</fieldset>
+
+        <div class="form-grup">
+            <button type="submit"> KIRIM</button>
+        </div>
+
+        <div class="form-grup">
+            <hr>
+            <input type="checkbox" name="subcribe" value="1" form="form1"> Subcribe notifikasi ke email Anda (jika tidak, silahkan kosongi) <br>
+            <input type="checkbox" name="subcribe" value="1" form="form1"> Subcribe postingan dari Website
+        </div>
+
+    </form>
+    </div>
+
+    </div>
+
+    <footer>
+        <p>Copyright &copy; by Adelia Nur Safitri 2024</p>
+    </footer>
+</body>
+</html>
